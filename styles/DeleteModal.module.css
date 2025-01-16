@@ -1,0 +1,72 @@
+.modal {
+  position: fixed;
+  width: 472px;
+  height: 338px;
+  border-radius: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal Image {
+  padding-bottom: 64px;
+  padding-top: 45px;
+}
+
+.modal p {
+  text-align: center;
+}
+
+.close {
+  padding: 48px 188px 0;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 25px 0 34px 0;
+}
+
+.modalButtons button {
+  background-color: #f43f5e;
+  color: #ffffff;
+  height: 53px;
+  border: none;
+  border-radius: 15px;
+  width: 150px;
+}
+
+.deleteButton {
+  background-color: #f43f5e;
+  color: white;
+  width: 185px;
+  height: 42px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.modal button:first-of-type {
+  background-color: #dfdfdf;
+  color: #282828cc;
+}

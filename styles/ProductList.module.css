@@ -1,0 +1,223 @@
+.headContainer {
+  width: calc(100% - 300px);
+  height: 68px;
+  border-radius: 16px;
+  border: solid 1px #e4e4e4;
+  display: flex;
+  align-items: center;
+  margin: 28px auto;
+  padding: 0 20px;
+  background-color: #ffffff;
+}
+
+.adminSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 160px;
+  height: 52px;
+}
+
+.adminPhoto {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.adminDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.adminName,
+.adminRole {
+  color: #282828;
+  font-family: Vazirmatn;
+  font-size: 16px;
+  font-weight: 400;
+  direction: rtl;
+
+  text-align: right;
+  flex-wrap: nowrap;
+}
+
+.adminName {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.adminRole {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21.88px;
+}
+
+.searchBar {
+  display: flex;
+  flex-direction: row-reverse;
+  flex: 100%;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.searchBar input {
+  font-family: Vazirmatn;
+  font-size: 16px;
+  font-weight: 400;
+
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  direction: rtl;
+  outline: none;
+  background-color: #ffffff;
+  margin: auto;
+}
+
+.searchBar input:focus {
+  border-color: #007bff;
+}
+
+.managementSection {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: baseline;
+  gap: 10px;
+  width: calc(100% - 300px);
+  height: 68px;
+  margin: auto;
+}
+.managementSection div {
+  display: flex;
+  align-items: center;
+}
+.managementTitle {
+  direction: rtl;
+  margin-right: 6px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.managementIcon {
+  width: 20px;
+  height: 20px;
+}
+.addProduct {
+  width: 132px;
+  height: 45px;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  opacity: 0px;
+  background-color: #55a3f0;
+  display: inline;
+  color: #ddd;
+  font-family: Vazirmatn;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  border: none;
+}
+
+.tableContainer table {
+  direction: rtl;
+  border-collapse: collapse;
+  width: calc(100% - 300px);
+  height: 100%;
+  border-radius: 30px;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.tableContainer th,
+.tableContainer td {
+  padding: 10px;
+  text-align: right;
+  border-bottom: 1px solid #ddd;
+  height: 55.88px;
+  background-color: #ffffff;
+}
+
+.tableContainer tr:hover {
+  background-color: #55a3f0;
+}
+
+.tableContainer th {
+  background-color: #f2f2f2 !important;
+  height: 70px;
+}
+
+.tableContainer thead tr:first-child {
+  border-top-right-radius: 30px;
+}
+
+.tableContainer thead th:last-child {
+  border-top-left-radius: 30px;
+}
+.tableContainer td:last-child {
+  align-items: center;
+}
+.tableButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin-left: 14px;
+}
+
+.tableContainer td img {
+  width: 16px;
+  height: 16px;
+}
+
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  direction: rtl;
+}
+
+.pageLink {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin: 0;
+  border-radius: 50%;
+  border: 2px solid #8d8d8d80;
+  color: #8d8d8d80;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.pageLink:hover {
+  background-color: rgba(85, 163, 240, 0.2);
+  border-color: #55a3f0;
+  color: #55a3f0;
+}
+
+.activePage {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin: 0;
+  border-radius: 50%;
+  background-color: #55a3f0;
+  color: #fff;
+  border-color: #55a3f0;
+}
