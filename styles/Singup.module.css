@@ -15,9 +15,9 @@
   height: 84.47px;
 }
 .title {
-  margin: 16px auto 63px !important;
+  margin: 62px auto 0px;
+  text-align: center;
 }
-
 .container input {
   width: calc(100% - 60px);
   margin: 0 25px 16px 35px;

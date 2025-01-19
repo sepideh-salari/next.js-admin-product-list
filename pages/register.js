@@ -7,6 +7,8 @@ import Link from "next/link";
 import Union from "../public/Union.svg";
 import styles from "../styles/Singup.module.css";
 import { useRouter } from "next/router";
+import { toast, ToastContainer } from "react-toastify";
+
 const Signup = () => {
   const router = useRouter();
   const initialValues = {
@@ -30,7 +32,7 @@ const Signup = () => {
 
   const handleSubmit = async (values, { setSubmitting, setErrors }) => {
     try {
-      const apiUrl = `${process.env.NEXT_PUBLIC_API_BASE_URL}/auth/register`;
+      const apiUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/auth/register`;
 
       const response = await axios.post(apiUrl, values, {
         headers: {
@@ -39,7 +41,7 @@ const Signup = () => {
         },
       });
       console.log("Signup successful:", response.data);
-      alert("حساب کاربری با موفقیت ساخته شد");
+      toast.error("حساب کاربری با موفقیت ساخته شد");
       router.push("/login");
     } catch (error) {
       console.error("Error signing up:", error.response?.data || error.message);
